@@ -1,0 +1,31 @@
+
+# ==========================================
+# ARKETECH - CALCULADORA DE BONUS
+# Bonus de Boas-Vindas: 15%
+# ==========================================
+
+# 1. Entrada de dados
+nome = input("Digite o nome do funcionário: ")
+cargo = input("Digite o cargo do funcionário: ")
+
+# Converter o salário para número decimal (float)
+salario_base = float(input("Digite o salário base (use ponto, ex: 1500.50): "))
+
+# 2. Cálculo do bônus (15%)
+bonus = salario_base * 0.15
+
+# 3. Cálculo do salário final
+salario_final = salario_base + bonus
+
+# 4. Exibição do painel final
+print("\n==========================================")
+print("       ARKETECH - PAINEL DE PAGAMENTO")
+print("==========================================")
+print(f"Funcionário:       {nome}")
+print(f"Cargo:             {cargo}")
+print("------------------------------------------")
+print(f"Salário Base:      R$ {salario_base:,.2f}")
+print(f"Bônus (15%):       R$ {bonus:,.2f}")
+print("------------------------------------------")
+print(f"TOTAL A RECEBER:   R$ {salario_final:,.2f}")
+print("==========================================")
